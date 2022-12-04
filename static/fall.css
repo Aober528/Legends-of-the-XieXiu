@@ -1,0 +1,12 @@
+html {
+	background: #5433FF;
+	background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+	background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+	text-align: center;
+}
+h1 {
+	color: white;
+}
+h2 {
+	color: white;
+}

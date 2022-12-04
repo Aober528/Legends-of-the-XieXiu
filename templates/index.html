@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+	<title>进入-撷秀杀</title>
+</head>
+<body>
+	<div style="text-align: left;" onclick="window.open('/', '_self')"><h2><返回</h2></div>
+	<div class="container">
+		<h1>Aober</h1>
+		<form action="" method="post" novalidate>
+			<div>
+				<p>{{ form.username.label }}</p>
+				{{ form.username }}
+			</div>
+			{% for err in form.username.errors %}
+			<div class="col-md-12">
+				<p style="color: red;">{{err}}</p>
+			</div>
+			{% endfor %}
+			<div>
+				<p>{{ form.password.label }}</p>
+				{{ form.password }}
+				{% for err in form.password.errors %}
+				<div>
+					<p style="color: red;">{{ err }}</p>
+				</div>
+				{% endfor %}
+			</div>
+			<br>
+			{{ form.csrf_token }}
+			{{ form.submit }}
+		</form>
+	</div>
+</body>
+</html>

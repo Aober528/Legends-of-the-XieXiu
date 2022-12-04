@@ -1,0 +1,21 @@
+html {
+	background: #5433FF;
+	background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+	background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+}
+.container {
+	text-align: center;
+}
+input {
+	color: black;
+	background: transparent;
+	border-color: white;
+	border: 1px solid white;
+	display: inline;
+}
+p {
+	display: inline;
+}
+h1 {
+	color: white;
+}
